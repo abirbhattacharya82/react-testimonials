@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Testimonials from './Components/Testimonials';
 import './App.css';
-
+import img1 from './1.jpg';
+import img2 from './2.jpg';
+import img3 from './3.jpg';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Testimonials items={[[img1,"Name One","Designation One","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti nihil rem, vero totam doloremque."],[img2,"Name Two","Designation Two","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti nihil rem, vero totam doloremque."],[img3,"Name Three","Designation One","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti nihil rem, vero totam doloremque."],[img1,"Name One","Designation One","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti nihil rem, vero totam doloremque."],[img1,"Name One","Designation One","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti nihil rem, vero totam doloremque."]]} />
+      
     </div>
   );
 }

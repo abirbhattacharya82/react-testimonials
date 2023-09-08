@@ -1,0 +1,158 @@
+:root {
+    --items: 0;
+}
+
+
+.Testimonials {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Testimonials .Track {
+    display: flex;
+    width: calc(30vw*var(--items));
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-30vw*(var(--items)/2)));
+    }
+}
+
+.Testimonials .Track:hover {
+    animation-play-state: paused;
+}
+
+.Testimonial {
+    border-radius: 10px;
+    width: 20vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Testimonial .Image {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.Testimonial .Image img {
+    width: 10vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.Testimonial .DetailSection {
+    background-color: rgb(124, 40, 235);
+    padding: 10%;
+    margin-top: -25%;
+    padding-top: 30%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Testimonial .DetailSection .Name {
+    font-size: 150%;
+    color: white;
+    font-weight: bold;
+}
+
+.Testimonial .DetailSection .Designation {
+    font-size: 120%;
+    color: white;
+}
+
+.Testimonial .DetailSection .Review {
+    color: white;
+    font-style: italic;
+    margin-top: 5%;
+}
+
+@media(max-width:900px) {
+    .Testimonial {
+        width: 40vw;
+    }
+
+    .Testimonial .DetailSection {
+        margin-top: -20%;
+    }
+
+    .Testimonials .Track {
+        display: flex;
+        width: calc(40vw*var(--items));
+        animation: scroll 60s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-40vw*(var(--items)/2)));
+        }
+
+    }
+}
+
+@media(max-width:700px) {
+    .Testimonial {
+        width: 60vw;
+    }
+
+    .Testimonial .Image img {
+        width: 20vw;
+    }
+
+    .Testimonials .Track {
+        display: flex;
+        width: calc(60vw*var(--items));
+        animation: scroll 60s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-60vw*(var(--items)/2)));
+        }
+
+    }
+}
+
+@media(max-width:400px) {
+    .Testimonial {
+        width: 80vw;
+    }
+
+    .Testimonial .Image img {
+        width: 30vw;
+    }
+
+    .Testimonial .DetailSection .Name {
+        font-size: 120%;
+    }
+
+    .Testimonial .DetailSection .Designation {
+        font-size: 100%;
+    }
+
+    .Testimonial .DetailSection .Review {
+        font-size: 90%;
+    }
+}
