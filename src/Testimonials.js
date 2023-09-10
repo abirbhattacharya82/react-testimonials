@@ -3,7 +3,7 @@ import './Testimonials.css';
 import Testimonial from './Testimonial/Testimonial';
 
 function Testimonials(props) {
-    document.documentElement.style.setProperty("--items", 6);
+    document.documentElement.style.setProperty("--items", props.items.length);
     return (
         <div className="Testimonials">
             <div className="Track">
