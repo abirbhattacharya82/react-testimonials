@@ -22,8 +22,12 @@
         transform: translateX(0);
     }
 
-    100% {
+    50% {
         transform: translateX(calc(-30vw*(var(--items)/2)));
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -101,8 +105,12 @@
             transform: translateX(0);
         }
 
-        100% {
+        50% {
             transform: translateX(calc(-40vw*(var(--items)/2)));
+        }
+
+        100% {
+            transform: translateX(0);
         }
 
     }
@@ -128,8 +136,12 @@
             transform: translateX(0);
         }
 
-        100% {
+        50% {
             transform: translateX(calc(-60vw*(var(--items)/2)));
+        }
+
+        100% {
+            transform: translateX(0);
         }
 
     }
