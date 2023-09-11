@@ -1,5 +1,6 @@
 # React Testimonials
 Create beautiful, infinitely looping testimonial carousels with ease using the React Testimonials package. This customizable component allows you to showcase customer reviews, quotes, or any other content in an engaging and dynamic way.
+https://github.com/abirbhattacharya82/react-testimonials/assets/70687014/7b69dfa9-65bb-4c15-bde8-f24aa3fb825e
 
 ## Key Features
 🎨 Customizable Design
